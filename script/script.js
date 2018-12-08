@@ -19,7 +19,7 @@ $(document).ready(function(){
       },
       {
         id: 3,
-        weight: 70,
+        weight: 5,
         value: 30,
         name: "Vue",
         selected: false,
@@ -27,23 +27,15 @@ $(document).ready(function(){
       },
       {
         id: 4,
-        weight: 5,
+        weight: 60,
         value: 30,
         name: "Angular",
         selected: false,
         order: 0
-      },
-      {
-        id: 5,
-        weight: 5,
-        value: 45,
-        name: "JavaScript",
-        selected: false,
-        order: 0
-      },
+      }
     ];
   
-    var knapsack = new Knapsack(objects, 30);
+    var knapsack = new Knapsack(objects, 40);
     knapsack.order();
     updateUI();
   
